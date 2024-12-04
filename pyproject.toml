@@ -13,6 +13,8 @@ aoc = {path = "aoc", develop = true}
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.4"
 notebook = "^7.3.0"
+flake8 = "^7.1.1"
+black = "^24.10.0"
 
 [build-system]
 requires = ["poetry-core"]
