@@ -23,6 +23,19 @@ test = ["anyio[trio]", "coverage[toml] (>=7)", "exceptiongroup (>=1.2.0)", "hypo
 trio = ["trio (>=0.26.1)"]
 
 [[package]]
+name = "aoc"
+version = "0.1.0"
+description = ""
+optional = false
+python-versions = "^3.10"
+files = []
+develop = true
+
+[package.source]
+type = "directory"
+url = "aoc"
+
+[[package]]
 name = "appnope"
 version = "0.1.4"
 description = "Disable App Nap on macOS >= 10.9"
@@ -2207,4 +2220,4 @@ test = ["websockets"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f4517fa53c177fa07064b0d7266070d531fe3379f00f68cea9a236fdaa7c4980"
+content-hash = "fca3c166b379724b12a5b3c53bbf714eb8ff2575fe83916e53324ce08d98f9ed"
