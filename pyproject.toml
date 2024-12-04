@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "aoc2024"
+version = "0.1.0"
+description = "Virtual Environment used to solve AdventOdCode 2024 challenge"
+authors = ["Ldf Develop <ldf.develop@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.4"
+notebook = "^7.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
