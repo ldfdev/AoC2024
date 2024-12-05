@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 aoc = {path = "aoc", develop = true}
+rich = "^13.9.4"
 
 
 [tool.poetry.group.dev.dependencies]

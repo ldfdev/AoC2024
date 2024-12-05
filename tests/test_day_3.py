@@ -73,6 +73,7 @@ def test_combine_instructions():
     assert isinstance(parsed[5], day3.MultiplicationInstruction)
     assert parsed[5].operands == [8, 5]
 
+
 def test_execute_instructions_with_enable_capabilities():
     instructions: day3.Instructions = day3.read_instructions_from_file(day_3_file)
 
