@@ -50,9 +50,9 @@ def apply_concatenation(term_1: int, term_2: int) -> typing.Optional[int]:
     Otehrwise return None"""
     str_term_1, str_term_2 = str(term_1), str(term_2)
     if str_term_1.endswith(str_term_2):
-         pref: str = str_term_1.removesuffix(str_term_2)
-         if pref:
-             return int(pref)
+        pref: str = str_term_1.removesuffix(str_term_2)
+        if pref:
+            return int(pref)
 
 
 def determine_equation_is_valid(
@@ -105,6 +105,7 @@ def solve_part_a(equations: list[Equation]) -> int:
             [Operation.ADDITION, Operation.MULTIPLICATION],
         )
     )
+
 
 def solve_part_b(equations: list[Equation]) -> int:
     return sum(
