@@ -71,3 +71,7 @@ def test_blink():
 
 def test_solve_part_a():
     assert day11.solve_part_a(input_data) == 55312
+
+
+def test_solve_part_b():
+    assert day11.solve_part_b(input_data) == 55312

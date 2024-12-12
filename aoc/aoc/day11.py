@@ -1,4 +1,5 @@
 import itertools
+from collections import Counter, defaultdict
 
 
 def read_input_file(file_Path: str) -> list[int]:
@@ -31,3 +32,16 @@ def solve_part_a(stones: list[int]) -> int:
     for _ in range(25):
         initial = blink(initial)
     return len(initial)
+
+
+def solve_part_b(stones: list[int]) -> int:
+    """count the number of stone after blinking 25 times"""
+    initial: dict[int, int] = Counter(stones)
+    for _ in range(75):
+        new_counter = defaultdict(int)
+        for stone in initial:
+            new_stones: list[int] = stone_evolution(stone)
+            for new_stone in new_stones:
+                new_counter[new_stone] += initial[stone]
+        initial = new_counter
+    return sum(initial.values())
