@@ -20,10 +20,15 @@ def test_determine_equation_is_valid():
     assert day7.determine_equation_is_valid(54, [10], allowed_operations) is False
 
     assert day7.determine_equation_is_valid(1212, [12, 12], allowed_operations) is False
-    assert day7.determine_equation_is_valid(1212, [12, 12], [op for op in day7.Operation]) is True
+    assert (
+        day7.determine_equation_is_valid(1212, [12, 12], [op for op in day7.Operation])
+        is True
+    )
+
 
 def test_solve_part_a():
     assert day7.solve_part_a(input_data) == 3749
+
 
 def test_solve_part_b():
     assert day7.solve_part_b(input_data) == 11387
